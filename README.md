@@ -9,6 +9,16 @@ This package takes as input:
   - A sparse 2D matrix (CSR) containing cell-cell weighted connectivities (KNN, etc...)
 
 ## Installation:
+To install directly from github run below in command line
+
+pip install git+https://github.com/Issacgoh/FA2nimate.git
+
+To clone and install:
+
+git clone https://github.com/Issacgoh/FA2nimate.git
+
+cd ./FA2nimate
+
 
 
 ## Usage notes:
