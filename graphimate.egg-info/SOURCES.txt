@@ -1,0 +1,16 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.py
+graphimate/__init__.py
+graphimate/data_loaders.py
+graphimate/general_utlities.py
+graphimate/main.py
+graphimate/modules.py
+graphimate/raw_preprocessing_methods.py
+graphimate/visualisation.py
+graphimate.egg-info/PKG-INFO
+graphimate.egg-info/SOURCES.txt
+graphimate.egg-info/dependency_links.txt
+graphimate.egg-info/requires.txt
+graphimate.egg-info/top_level.txt

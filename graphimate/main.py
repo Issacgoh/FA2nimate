@@ -66,8 +66,8 @@ def register_data(adata, feat_use, n_iterations, skip_iterations = 1,explosion_d
             print("We found your graph, we now assume that this is the actual connectivity matrix")
         except:
             print('initialisation graph not detected in data, proceeding to compute KNN')
-            sc.pp.neighbors(adata)
-            snn = adata.obsp[adata.uns['neighbors']['connectivities_key']]
+            sc.pp.neighbors(adata,key_added=knn_key)
+            snn = adata.obsp[adata.uns[knn_key]['connectivities_key']]
     else:
         snn = adata.obsp[adata.uns[knn_key]['connectivities_key']]
     
