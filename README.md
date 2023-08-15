@@ -2,7 +2,7 @@
 This is a fun package for creating iterated animations and movies of continuous graph layouts using the FA2 algorithm. The FA2 algorithm utilises Barnes Hut simulation, degree-dependent repulsive force, and local and global adaptive temperatures. 
 
 <video preload="none" autoplay loop muted playsinline poster="LINK.jpg" width="100%" height="100%">
-    <source src="[LINK.mp4](https://github.com/Issacgoh/Graphimate/blob/main/Emergence_first_blood_stem_cells.mp4)" type="video/mp4">
+    <source src="https://github.com/Issacgoh/Graphimate/blob/main/Emergence_first_blood_stem_cells.mp4" type="video/mp4">
 </video>
 
 ## Starting notes:
