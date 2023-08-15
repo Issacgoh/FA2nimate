@@ -11,11 +11,11 @@ This package takes as input:
 ## Installation:
 To install directly from github run below in command line
 
-pip install git+https://github.com/Issacgoh/FA2nimate.git
+pip install git+git@github.com:Issacgoh/Graphimate.git
 
 To clone and install:
 
-git clone https://github.com/Issacgoh/FA2nimate.git
+git clone https://github.com/Issacgoh/Graphimate.git
 
 cd ./FA2nimate
 
