@@ -15,7 +15,7 @@ Issac Goh, Newcastle University; Sanger institute (https://haniffalab.com/team/i
 Issac Goh, (ig7@sanger.ac.uk)
 
 ## Built With
-[Scanpy](https://scanpy.readthedocs.io/en/stable/)
+[Scanpy](https://scanpy.readthedocs.io/en/stable/)   
 [ForceAtlas2](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0098679)  
 [Python-igraph](https://python.igraph.org/en/stable/)  
 [MoviePy](https://zulko.github.io/moviepy/)
