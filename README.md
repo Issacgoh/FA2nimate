@@ -1,4 +1,4 @@
-# FA2nimate
+# Graphimate
 This is a fun package for creating iterated animations and movies of continuous graph layouts using the FA2 algorithm. The FA2 algorithm utilises Barnes Hut simulation, degree-dependent repulsive force, and local and global adaptive temperatures. 
 
 ## Starting notes:
