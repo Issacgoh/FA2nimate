@@ -753,3 +753,4 @@ def empirical_bayes_balanced_stratified_KNN_sampling(adata, feat_use, knn_key, s
     plt.tight_layout()
     plt.show()
     return adata_samp, final_sample_indices
+
