@@ -292,6 +292,3 @@ def video_to_gif(input_video_path, output_gif_path, fps=10):
     """
     with VideoFileClip(input_video_path) as clip:
         clip.write_gif(output_gif_path, fps=fps)
-
-# Usage
-video_to_gif("path_to_video.mp4", "output.gif", fps=10)

@@ -277,3 +277,18 @@ def setup_animation(adata,feat_use,use_initial='X_pca',knn_key='neighbors',edges
     animation.write_videofile(fpath, fps=int(fps))
     
     return fpath
+
+
+from moviepy.editor import VideoFileClip
+
+def video_to_gif(input_video_path, output_gif_path, fps=10):
+    """
+    Convert a video into gif.
+    
+    Parameters:
+    - input_video_path: str, path to the input video file.
+    - output_gif_path: str, path to save the output gif.
+    - fps: int, frames per second for the gif.
+    """
+    with VideoFileClip(input_video_path) as clip:
+        clip.write_gif(output_gif_path, fps=fps)
