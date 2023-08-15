@@ -1,6 +1,8 @@
 # Graphimate
 This is a fun package for creating iterated animations and movies of continuous graph layouts using the FA2 algorithm. The FA2 algorithm utilises Barnes Hut simulation, degree-dependent repulsive force, and local and global adaptive temperatures. 
 
+![Simulation of the emergence of the first blood stem cells in human life from specialized endothelium (note that the mp4 outputs are smoother)]([https://raw.githubusercontent.com/YourUsername/YourRepo/main/path_to_gif/your_gif.gif](https://github.com/Issacgoh/Graphimate/blob/main/resources/Emergence_first_blood_stem_cells.mp4.gif))
+
 ## Starting notes:
 This package takes as input:
 
