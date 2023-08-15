@@ -55,10 +55,15 @@ def register_data(adata, feat_use, n_iterations, skip_iterations = 1,explosion_d
             print("unable to compute dispersion, is your data norm?")
             print('proceeding to compute PCA on all genes as Highly var was not possible')
         sc.pp.pca(adata,50)
+        use_initial = "X_pca"
         
     positions = adata.obsm[use_initial][:, :2].copy()
     
     # Now check KNN/custom connectivites graph
+    # This line had to be added for as scanpy's recent update 1.9.3 introduces a bug for pp.neighbors if diffmap is available
+    if 'X_diffmap' in adata.obsm.keys():
+        adata.obsm['X_diffmap_']  = adata.obsm['X_diffmap']
+        del adata.obsm['X_diffmap']
     if not knn_key in adata.uns.keys():
         print("Unable to locate your KNN graph, we will look for the key in obsp")
         try:
@@ -66,7 +71,7 @@ def register_data(adata, feat_use, n_iterations, skip_iterations = 1,explosion_d
             print("We found your graph, we now assume that this is the actual connectivity matrix")
         except:
             print('initialisation graph not detected in data, proceeding to compute KNN')
-            sc.pp.neighbors(adata,key_added=knn_key)
+            sc.pp.neighbors(adata,key_added=knn_key,use_rep=use_initial)
             snn = adata.obsp[adata.uns[knn_key]['connectivities_key']]
     else:
         snn = adata.obsp[adata.uns[knn_key]['connectivities_key']]

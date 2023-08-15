@@ -17,7 +17,7 @@ To clone and install:
 
 git clone https://github.com/Issacgoh/Graphimate.git
 
-cd ./FA2nimate
+cd ./graphimate
 
 
 

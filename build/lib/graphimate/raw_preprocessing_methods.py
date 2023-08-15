@@ -70,31 +70,30 @@ import re
 import glob
 import os
 import sys
-#from geosketch import gs
 from numpy import cov
 import scipy.cluster.hierarchy as spc
 import seaborn as sns; sns.set(color_codes=True)
-from sklearn.linear_model import LogisticRegression
+# from sklearn.linear_model import LogisticRegression
 import sklearn
 from pathlib import Path
 import requests
 import psutil
 import random
 import threading
-import tracemalloc
+# import tracemalloc
 import itertools
 import math
 import warnings
 import sklearn.metrics as metrics
 import numpy as np
 from sklearn.metrics import log_loss
-import mygene
-import gseapy as gp
-import mygene
+# import mygene
+# import gseapy as gp
+# import mygene
 import scipy.sparse as sparse
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import RepeatedStratifiedKFold
+# from sklearn.metrics.pairwise import cosine_similarity
+# from sklearn.model_selection import cross_val_score
+# from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn import metrics
 import seaborn as sn
 import pandas as pd
@@ -103,7 +102,6 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 import pandas as pd
-import pymc3 as pm
 from scipy.sparse import csr_matrix
 from scipy.stats import entropy
 # raw_data_feature_selection_dimensionality_reduction

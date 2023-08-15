@@ -7,6 +7,8 @@
 ### Author notes
 
 ### Features to add
+from base64 import b64encode
+from IPython.display import HTML
 
 def play(filename):
     html = ''
