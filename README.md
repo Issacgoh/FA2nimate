@@ -1,5 +1,5 @@
 # Graphimate
-This is a fun package for creating iterated animations and movies of continuous graph layouts using the FA2 algorithm. The FA2 algorithm utilises Barnes Hut simulation, degree-dependent repulsive force, and local and global adaptive temperatures. 
+This is a fun package for creating iterated animations and movies of continuous graph layouts using a defined graph layout algorithm. The default layput is the FA2 algorithm which utilises Barnes Hut simulation, degree-dependent repulsive force, and local and global adaptive temperatures. With these iterative simulations, we can observe global structures in our data "unfolding" in a fun and intuitive manner! 
 
 ![Simulation of the emergence of the first blood stem cells in human life from specialized endothelium (note that the mp4 outputs are smoother)](https://github.com/Issacgoh/Graphimate/blob/main/resources/Emergence_first_blood_stem_cells.mp4.gif)
 
