@@ -232,6 +232,7 @@ def setup_animation(adata,feat_use,use_initial='X_pca',knn_key='neighbors',edges
     adata.obs['celltype'] = adata.obs[feat_use].astype('category')
     try:
         colors = list(adata.uns[feat_use+'_colors'])
+        adata.uns['celltype_colors'] = np.array(colors)
     except:
         print("You do not provide a color key in .uns, we will randomly generate one")
         # create color dict
@@ -272,9 +273,19 @@ def setup_animation(adata,feat_use,use_initial='X_pca',knn_key='neighbors',edges
     
     # Create the animation from frames
     animation = VideoClip(make_frame, duration=fa2_duration + explosion_duration)
-    animation.resize(width=resolution[0], height=resolution[1])
+    
+    # Split the video into two parts: explosion, FA2 phase
+    explosion = animation.subclip(0, explosion_duration)
+    fa2_phase = animation.subclip(explosion_duration, explosion_duration + fa2_duration)
+    # Adjust the speed of the entire FA2 phase
+    fa2_phase = fa2_phase.fx(vfx.speedx, fa2_speed_factor)
+    
+    # Concatenate the parts back together
+    final_animation = concatenate_videoclips([explosion, fa2_phase])
+    
+    final_animation.resize(width=resolution[0], height=resolution[1])
     fpath = out_path+'/'+date_time + "fa2_animation.mp4"
-    animation.write_videofile(fpath, fps=int(fps))
+    final_animation.write_videofile(fpath, fps=int(fps))
     
     return fpath
 
